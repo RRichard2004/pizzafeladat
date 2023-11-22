@@ -5,24 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #cd9a01;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.card{
-  border: 3px darkcyan solid ;
-  border-radius: 20px;
-  background-color:#fd8100;
-  color:rgb(0, 0, 0);
-  flex: auto;
-  max-width: 30%;
-  margin-right: 5px;
-  padding-top: 5px;
+h2{
+font-size: x-large;
 }
+p{
+  font-size: medium;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.card{
+  flex-basis: 32%;
+}
+
 .spinner-border{
   width: 300px;
   height: 300px;
@@ -32,10 +34,4 @@ code {
   justify-content: center;
   align-items: center;
   color: blueviolet;
-}
-h2{
-font-size: x-large;
-}
-p{
-  font-size: medium;
 }

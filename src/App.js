@@ -27,17 +27,17 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className='text-center mt-5 mb-5'>Pizzák</h1>
+    <div className="container text-center">
+      <h1 className='mt-5 mb-5'>Pizzák</h1>
       {isFetchPending? (
       <div className="spinner-border"></div>)
       : 
-      (<div className="row">
+      (<div className="flex-row d-flex flex-grow-0 flex-wrap">
         {pizzák.map(pizza => (
-          <div key={pizza.id} className="card">
-              <h2 className='cart-subtitle'>Pizza neve: {pizza.name}</h2>
+          <div key={pizza.id} className="card border p-2">
+              <h2 className='text-muted'>Pizza neve: {pizza.name}</h2>
               <p>Gluténmentes-e: {pizza.isGlutenFree ? 'Igen' : 'Nem'}</p>
-              <img src={pizza.kepURL} alt={pizza.name}/>
+              <img height={200} src={pizza.kepURL} alt={pizza.name}/>
           </div>
         ))}
       </div>)}
